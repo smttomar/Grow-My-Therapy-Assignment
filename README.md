@@ -91,3 +91,9 @@ The goal was to demonstrate attention to detail, design thinking, responsiveness
 npm install
 npm run dev
 ```
+
+Open http://localhost:3000 to view the project locally.
+
+---
+
+Author: Chandra Pratap Singh
