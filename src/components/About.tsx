@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { link } from "fs";
 
 export default function About() {
     return (
-        <section className="bg-[#b9b9b2] px-6 md:px-16 md:py-8 py-24">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-                <div className="max-w-prose">
+        <section className="bg-[#b9b9b2] px-6 md:px-16 md:py-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-10">
+                <div className="max-w-prose order-2 md:order-1">
                     <Reveal>
                         {" "}
                         <h2 className="font-serif text-3xl md:text-4xl text-[#2F3E46]">
@@ -36,18 +37,19 @@ export default function About() {
                         </button>
                     </Reveal>
                 </div>
-                <Reveal>
-                    <div className="relative w-full h-140 flex justify-center">
-                        <div className="absolute w-120 h-120 rounded-full overflow-hidden">
-                            <Image
-                                src="/doc2.jpg"
-                                alt="Dr. Maya Reynolds"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
+                <div className="order-1 md:order-2">
+                    <Reveal>
+                        <div className="relative w-full md:h-120 h-80 flex justify-center">
+                            <div className="absolute md:w-120 md:h-120 w-80 h-80 rounded-full overflow-hidden">
+                                <Image
+                                    src="/doc2.jpg"
+                                    alt="Dr. Maya Reynolds"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
 
-                        {/* <div className="absolute bottom-0 left-3/4 -translate-x-1/2 w-54 h-54 rounded-full overflow-hidden">
+                            {/* <div className="absolute bottom-0 left-3/4 -translate-x-1/2 w-54 h-54 rounded-full overflow-hidden">
                         <Image
                             src="/about-2.png"
                             alt="Flowers close-up"
@@ -55,8 +57,9 @@ export default function About() {
                             className="object-cover"
                         />
                     </div> */}
-                    </div>
-                </Reveal>
+                        </div>
+                    </Reveal>
+                </div>
             </div>
         </section>
     );

@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Background from "@/components/Background";
+import OurOfficeSection from "@/components/OurOfficeSection";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Specialties />
             <SupportSection />
             <About />
+            <OurOfficeSection />
             <FAQ />
             <Background />
             <CTA />

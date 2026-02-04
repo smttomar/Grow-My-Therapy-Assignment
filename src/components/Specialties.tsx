@@ -23,7 +23,7 @@ export default function Specialties() {
     return (
         <section className="bg-background px-6 md:px-16 py-28">
             <Reveal>
-                <h2 className="font-serif text-3xl md:text-5xl text-center text-[#2F3E46] mb-20">
+                <h2 className="font-serif text-4xl md:text-5xl text-center text-[#2F3E46] mb-20">
                     My Specialties
                 </h2>
             </Reveal>

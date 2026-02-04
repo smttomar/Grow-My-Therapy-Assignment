@@ -1,16 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Reveal from "./Reveal";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                setShow(false);
+            } else {
+                setShow(true);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
 
     return (
-        <header className="w-full bg-[#e2dbd1] px-4 md:px-16 py-4">
-            <nav className="text-[#2F3E46] flex items-center justify-between bg-transparent transform font-serif">
+        <header
+            className={`fixed top-0 left-0 w-full z-50 transition-transform px-4 py-2 backdrop-blur-xs bg-transparent duration-500 ease-in-out ${
+                show ? "translate-y-0" : "-translate-y-full"
+            }`}
+        >
+            <nav className="text-[#2F3E46] flex items-center justify-between font-serif">
                 <Reveal>
-                    <a href="#" className="text-4xl tracking-wide">
+                    <a href="#" className="md:text-4xl text-2xl tracking-wide">
                         DR. MAYA REYNOLDS
                     </a>
                 </Reveal>
