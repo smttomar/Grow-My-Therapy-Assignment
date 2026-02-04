@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "DR. MAYA REYNOLDS",
+    title: "Dr. Maya Reynolds",
     description: "Anxiety & Trauma Therapy for Adults in Santa Monica, CA",
 };
 
