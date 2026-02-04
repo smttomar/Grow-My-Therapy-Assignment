@@ -6,20 +6,30 @@ export default function Footer() {
                 <div>
                     <Reveal>
                         <h3 className="font-serif text-4xl mb-8 hover:cursor-pointer text-[#2F3E46]">
-                            <a href="/">DR. MAYA REYNOLDS</a>
+                            <a href="/">Dr. Maya Reynolds</a>
                         </h3>
                     </Reveal>
                     <p className="text-lg leading-relaxed text-[#5F6F73]">
-                        1700-1798 10th St
-                        <br />
-                        Santa Monica, CA 90404, USA
+                        <a
+                            href="https://share.google/o7IPyLQGbHQXJLkwS"
+                            target="blank"
+                        >
+                            1700-1798 10th St
+                            <br />
+                            Santa Monica, CA 90404, USA
+                        </a>
                     </p>
 
-                    <p className="mt-6 text-lg underline text-[#5F6F73]">
-                        <a href="/">docmayareynolds@therapy.com</a>
+                    <p className="mt-6 text-lg text-[#5F6F73]">
+                        <a
+                            href="mailto:docmayareynolds@therapy.com"
+                            target="blank"
+                        >
+                            docmayareynolds@therapy.com
+                        </a>
                     </p>
 
-                    <p className="mt-2 text-lg underline text-[#5F6F73]">
+                    <p className="mt-2 text-lg text-[#5F6F73]">
                         <a href="/">+1 (361) 800-4964</a>
                     </p>
                 </div>
@@ -30,9 +40,14 @@ export default function Footer() {
                         </h4>
                     </Reveal>
                     <p className="text-lg text-[#5F6F73]">
-                        Monday – Friday
-                        <br />
-                        10am – 6pm
+                        <a
+                            href="https://calendar.google.com/calendar/u/0/r/appointment?pli=1"
+                            target="blank"
+                        >
+                            Monday – Friday
+                            <br />
+                            10am – 6pm
+                        </a>
                     </p>
                 </div>
                 <div className=" md:text-right">
@@ -42,20 +57,20 @@ export default function Footer() {
                         </h4>
                     </Reveal>
                     <ul className="space-y-4 text-lg text-[#5F6F73] ">
-                        <li className="underline hover:cursor-pointer">
+                        <li className="hover:cursor-pointer">
                             <a href="/">Home</a>
                         </li>
-                        <li className="underline hover:cursor-pointer">
+                        <li className="hover:cursor-pointer">
                             <a href="/">Contact</a>
                         </li>
-                        <li className="underline hover:cursor-pointer">
+                        <li className="hover:cursor-pointer">
                             <a href="/">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <p className="text-center text-[#5F6F73] mt-10 mb-0">
-                All Rights Reserved © 2026 DR. MAYA REYNOLDS, LLC.
+                All Rights Reserved © 2026 Dr. Maya Reynolds, LLC.
             </p>
         </footer>
     );
